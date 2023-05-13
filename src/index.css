@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-primary text-primary;
+}
+
+.rounded-div {
+  @apply md:border md:border-secondary md:rounded-2xl md:shadow-2xl md:bg-primary md:px-2 md:max-w-[1140px]  md:w-full md:mx-2;
+}
+
+.dark {
+  --color-bg-primary: #040307;
+
+  --color-bg-secondary: #0e1014;
+  --color-text-primary: #dbdbdb;
+  --color-text-secondary: #dbdbdb;
+  --color-text-accent: #5740a0;
+  --color-bg-input: #4a5361;
+  --color-bg-button: #5740a0;
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #dbdbdb;
+  --color-text-accent: #2b6cb0;
+  --color-bg-input: #edf2f7;
+  --color-bg-button: #2b6cb0;
+}
