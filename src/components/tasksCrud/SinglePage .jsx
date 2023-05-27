@@ -21,7 +21,7 @@ const SinglePage = ({ url, name }) => {
   }
 
   return (
-    <article className="h-[500px] w-full  overflow-auto scrollbar scrollbar-thumb-gray-100 scrollbar-track-gray-900 pr-6">
+    <article className="h-[500px] w-full  overflow-auto scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-300 dark:scrollbar-thumb-gray-300 dark:scrollbar-track-gray-900 pb-4 pr-8">
       {data?.tasks?.length ? (
         <ol>
           {data.tasks.map((task) => (
@@ -31,7 +31,7 @@ const SinglePage = ({ url, name }) => {
                   <span className=" text-gray-500 text-sm">
                     {moment(task.createdAt).format(" Do MMM , YYYY")}
                   </span>
-                  <h1 className="text-xl font-serif title-font ">
+                  <h1 className="text-xl font-serif title-font font-semibold">
                     {task.title}
                   </h1>
 

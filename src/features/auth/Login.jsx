@@ -101,7 +101,7 @@ const Login = () => {
             id="loginEmail"
             ref={userRef}
             autoComplete="off"
-            className="bg-primary w-full border border-gray-400 rounded-lg shadow-xl text-center py-1 px-3 "
+            className="bg-primary w-full border border-gray-400 rounded shadow-xl text-center py-2 px-3 "
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             required
@@ -114,7 +114,7 @@ const Login = () => {
           <input
             type="password"
             id="password"
-            className="bg-primary w-full border border-gray-400 rounded-lg shadow-xl text-center py-1 px-3 "
+            className="bg-primary w-full border border-gray-400 rounded shadow-xl text-center py-2 px-3 "
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             required

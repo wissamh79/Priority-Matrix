@@ -6,14 +6,14 @@ const UrgentUnimportant_TASKS_URL = "/tasks/urgentUnimportant";
 const UrgentUnimportantTasksList = () => {
   const navigate = useNavigate();
   return (
-    <article className="flex flex-col  items-center justify-center w-full  space-y-4 ">
+    <article className="flex flex-col  items-center justify-center w-[80%]  space-y-4 ">
       <div className="flex  items-center justify-between w-full">
-        <button
+        {/* <button
           onClick={() => navigate(-1)}
           className="w-[75px]  p-1 bg-button text-secondary flex  items-center justify-center  rounded-lg shadow-xl font-bold cursor-pointer hover:shadow-2xl"
         >
           <MdArrowBack size={25} />
-        </button>
+        </button> */}
         <h1 className="  text-xl text-end font-semibold title-font ">
           Plan It
         </h1>

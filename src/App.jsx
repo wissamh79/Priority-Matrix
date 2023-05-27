@@ -51,9 +51,9 @@ function App() {
           <Route element={<PersistLogin />}>
             <Route path="tasks" element={<RequireAuth />}>
               {/* <Route path="tasks" element={<TasksLayout />}> */}
-              <Route index element={<TasksList />} />
               {"//DoIt "}
-              <Route path="do-it" element={<UrgentImportantTasksList />} />
+              <Route index element={<UrgentImportantTasksList />} />
+              {/* <Route path="do-it" element={<UrgentImportantTasksList />} /> */}
               {"//PlanIt "}
               <Route path="plan-it" element={<UrgentUnimportantTasksList />} />
               {" //EliminateIt"}

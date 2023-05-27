@@ -8,7 +8,7 @@ export const LoginButton = () => {
 
   return (
     <button
-      className=" w-[100px]   px-2 py-1 bg-button text-secondary flex  items-center justify-center  rounded-lg shadow-xl font-semibold cursor-pointer hover:shadow-2xl space-x-2"
+      className=" w-[100px]   px-2 py-1 bg-button text-white flex  items-center justify-center  rounded-lg shadow-xl font-semibold cursor-pointer hover:shadow-2xl space-x-2"
       onClick={() =>
         navigate("/login", { state: { from: location }, replace: true })
       }
@@ -21,7 +21,7 @@ export const LogoutButton = () => {
   const logout = useLogout();
   return (
     <button
-      className=" w-[100px]  px-2 py-1 bg-button text-secondary flex  items-center justify-center  rounded-lg shadow-xl font-semibold cursor-pointer hover:shadow-2xl space-x-2"
+      className=" w-[100px]  px-2 py-1 bg-button text-white flex  items-center justify-center  rounded-lg shadow-xl font-semibold cursor-pointer hover:shadow-2xl space-x-2"
       onClick={() => logout()}
     >
       <FiLogOut size={25} /> <span>Logout</span>
